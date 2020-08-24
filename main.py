@@ -1,37 +1,57 @@
-from model.Poker import Poker
+from model.Croupier import Croupier
+from model.User import User
 
 
 def main():
+    # 荷官入场
+    croupier = Croupier()
+
+    # 赌徒入场
+    user_a = User(1, "A", 100)
+    user_b = User(2, "B", 100)
+
+    times = input("几场赌局：")
     print("#==================================#")
-    print("    澳门葡京线上赌场，性感荷官在线发牌    ")
-    print("#==================================#\n")
+    try:
+        times = int(times)
+        for x in range(0, times):
+            # 洗牌
+            croupier.shuffle_pokers()
 
-    # 洗牌
-    poker_list = Poker.shuffle_pokers()
+            # 发牌
+            user_a.pokers = croupier.deal_pokers(5)
+            user_b.pokers = croupier.deal_pokers(5)
 
-    # 发牌
-    pokers_a = Poker.sort_pokers(Poker.deal_pokers(poker_list, 5))
-    pokers_b = Poker.sort_pokers(Poker.deal_pokers(poker_list, 5))
+            # 判定
+            type_a, j_info_a = user_a.get_pokers_info()
+            type_b, j_info_b = user_b.get_pokers_info()
 
-    # 获取类型及相关信息
-    type_a, j_info_a = Poker.get_pokers_info(pokers_a)
-    type_b, j_info_b = Poker.get_pokers_info(pokers_b)
+            # 输出手牌信息
+            print(user_a.name, type_a, user_a.pokers)
+            print(user_b.name, type_b, user_b.pokers)
 
-    # 输出手牌信息
-    print("A:", type_a, pokers_a)
-    print("B:", type_b, pokers_b)
+            # 判断结果
+            if j_info_a > j_info_b:
+                user_a.add_money(10)
+                user_b.sub_money(10)
+                print("\nA 获胜\n")
+            elif j_info_a < j_info_b:
+                user_b.add_money(10)
+                user_a.sub_money(10)
+                print("\nB 获胜\n")
+            else:
+                print("\n平局\n")
 
-    # 判断结果
-    if j_info_a > j_info_b:
-        print("\nA 获胜\n")
-    elif j_info_a < j_info_b:
-        print("\nB 获胜\n")
-    else:
-        print("\n平局\n")
+            print("赌资：")
+            print(user_a.name, user_a.money)
+            print(user_b.name, user_b.money)
+            print("#==================================#")
 
-    # 调试用：查看 判断信息
-    # print("Judge_Info_A:", j_info_a)
-    # print("Judge_Info_B:", j_info_b)
+            # 调试用：查看 判断信息
+            # print("Judge_Info_A:", j_info_a)
+            # print("Judge_Info_B:", j_info_b)
+    except ValueError:
+        print("输入异常")
 
 
 main()
