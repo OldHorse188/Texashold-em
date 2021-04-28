@@ -1,3 +1,5 @@
+# 判断信息类
+
 class JudgeInfo:
     __slots__ = ("__typ", "__data")
 
@@ -47,4 +49,3 @@ class JudgeInfo:
     @data.setter
     def data(self, data):
         self.__data = data
-

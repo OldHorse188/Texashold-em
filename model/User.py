@@ -1,5 +1,7 @@
 from model.JudgeInfo import JudgeInfo
 
+# 用户类
+
 
 class User:
     __slots__ = ("__uid", "__name", "__pokers", "__money")

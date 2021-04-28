@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a40ba0d-2e8d-4215-8531-f665995386a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/Croupier.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/User.py" afterDir="false" />
+    <list default="true" id="0a40ba0d-2e8d-4215-8531-f665995386a5" name="Default Changelist" comment="Improved for OO">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Croupier.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Croupier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/JudgeInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/JudgeInfo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Poker.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Poker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/User.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -89,8 +91,17 @@
       <workItem from="1598105559924" duration="10000" />
       <workItem from="1598163378054" duration="611000" />
       <workItem from="1598168112640" duration="142000" />
-      <workItem from="1598231752236" duration="5594000" />
+      <workItem from="1598231752236" duration="6001000" />
+      <workItem from="1619600147839" duration="285000" />
     </task>
+    <task id="LOCAL-00001" summary="Improved for OO">
+      <created>1598239329906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598239329906</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,28 +117,33 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Improved for OO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved for OO" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1598235479989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598235479989" />
-    <state width="1493" height="254" key="GridCell.Tab.0.bottom" timestamp="1598239184936">
+    <state width="1493" height="254" key="GridCell.Tab.0.bottom" timestamp="1598239620523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="254" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598239184936" />
-    <state width="1493" height="254" key="GridCell.Tab.0.center" timestamp="1598239184936">
+    <state width="1493" height="254" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598239620523" />
+    <state width="1493" height="254" key="GridCell.Tab.0.center" timestamp="1598239620523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="254" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598239184936" />
-    <state width="1493" height="254" key="GridCell.Tab.0.left" timestamp="1598239184936">
+    <state width="1493" height="254" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598239620523" />
+    <state width="1493" height="254" key="GridCell.Tab.0.left" timestamp="1598239620523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="254" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598239184936" />
-    <state width="1493" height="254" key="GridCell.Tab.0.right" timestamp="1598239184936">
+    <state width="1493" height="254" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598239620523" />
+    <state width="1493" height="254" key="GridCell.Tab.0.right" timestamp="1598239620523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="254" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598239184936" />
+    <state width="1493" height="254" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598239620523" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1598105549395">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -144,6 +160,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1598105549395" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1598239473180">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598239473180" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1598239341721">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598239341721" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598016525686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

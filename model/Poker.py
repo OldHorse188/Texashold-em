@@ -1,3 +1,5 @@
+# 扑克牌类
+
 class Poker:
     __slots__ = ("__color", "__num")
 
